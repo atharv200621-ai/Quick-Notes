@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Notes</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <h1>📝 Quick Notes</h1>
+    <p>Capture your thoughts in seconds.</p>
+  </header>
+
+  <main class="container">
+    <form id="note-form" class="card form">
+      <input type="text" id="title" placeholder="Note title" maxlength="100" required />
+      <textarea id="content" placeholder="Write your note here..." rows="4" maxlength="2000" required></textarea>
+      <button type="submit" id="add-btn">Add Note</button>
+      <p id="message" class="message" role="alert"></p>
+    </form>
+
+    <div class="list-header">
+      <h2>Your Notes <span id="count" class="badge">0</span></h2>
+      <button id="clear-btn" class="link-btn">Clear all</button>
+    </div>
+
+    <section id="notes" class="notes"></section>
+    <p id="empty" class="empty" hidden>No notes yet. Add your first one above!</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
